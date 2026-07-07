@@ -5,7 +5,6 @@
   "private": true,
   "scripts": {
     "dev": "npx serve . -p 3000",
-    "build": "echo 'Static site — no build step required.'",
     "validate": "npx html-validate index.html about.html services.html contact.html blog.html blog-post.html emi-calculator.html privacy.html"
   },
   "keywords": ["loan", "finance", "advisory", "india"],
