@@ -1,5 +1,5 @@
 /* =============================================
-   ANGEL CREDIT SERVICES — CALCULATOR MODULE
+   ANGEL CREDIT SERVICES – CALCULATOR MODULE
    Shared EMI calculator logic used by:
      - index.html (hero calculator + popup)
      - emi-calculator.html (full calc + amortization + popup)

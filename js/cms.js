@@ -1,6 +1,6 @@
 // =============================================
-// ANGEL CREDIT SERVICES — CMS DATA LAYER
-// cms.js — Blog post management (localStorage)
+// ANGEL CREDIT SERVICES – CMS DATA LAYER
+// cms.js – Blog post management (localStorage)
 // =============================================
 
 const CMS = {
@@ -36,25 +36,25 @@ const CMS = {
         <p>The length of your credit history contributes significantly to your score. Avoid closing old credit cards, especially if they have no annual fee, as they contribute to a longer average credit age.</p>
 
         <h3>4. Limit Hard Enquiries</h3>
-        <p>Every time you apply for new credit — a loan, credit card, or overdraft — the lender makes a "hard enquiry" on your CIBIL report. Too many hard enquiries in a short time signal financial stress. Space out your credit applications.</p>
+        <p>Every time you apply for new credit – a loan, credit card, or overdraft – the lender makes a "hard enquiry" on your CIBIL report. Too many hard enquiries in a short time signal financial stress. Space out your credit applications.</p>
 
         <h3>5. Diversify Your Credit Mix</h3>
         <p>Having a healthy mix of secured loans (home loan, car loan) and unsecured credit (personal loan, credit cards) is viewed positively by lenders. However, don't take on debt you don't need just for this reason.</p>
 
         <h3>6. Check Your CIBIL Report for Errors</h3>
-        <p>Errors in your credit report — such as incorrect personal information, wrongly reported missed payments, or settled accounts still showing as "open" — can unfairly lower your score. Review your report and dispute any inaccuracies.</p>
+        <p>Errors in your credit report – such as incorrect personal information, wrongly reported missed payments, or settled accounts still showing as "open" – can unfairly lower your score. Review your report and dispute any inaccuracies.</p>
 
         <h3>7. Become an Authorised User</h3>
         <p>If a family member with an excellent credit history adds you as an authorised user on their credit card, their positive payment history can benefit your score.</p>
 
         <h3>8. Allow Time</h3>
-        <p>Building a strong credit score is a gradual process. The strategies above are most effective over 6–12 months. If your loan application is urgent, speak to an Angel Credit advisor — we work with lenders who have different eligibility criteria.</p>
+        <p>Building a strong credit score is a gradual process. The strategies above are most effective over 6–12 months. If your loan application is urgent, speak to an Angel Credit advisor – we work with lenders who have different eligibility criteria.</p>
 
         <h2>How Long Does It Take?</h2>
-        <p>You can typically see meaningful improvement in 3–6 months with consistent effort. Dramatic improvements — for example, from 620 to 750 — typically take 12–18 months of disciplined credit behaviour.</p>
+        <p>You can typically see meaningful improvement in 3–6 months with consistent effort. Dramatic improvements – for example, from 620 to 750 – typically take 12–18 months of disciplined credit behaviour.</p>
 
         <h2>Conclusion</h2>
-        <p>A strong CIBIL score opens doors to better loan offers and financial opportunities. Start improving yours today. If you have questions about your home loan eligibility, contact our advisors at Angel Credit Services — we're here to help.</p>
+        <p>A strong CIBIL score opens doors to better loan offers and financial opportunities. Start improving yours today. If you have questions about your home loan eligibility, contact our advisors at Angel Credit Services – we're here to help.</p>
       `,
       featured: true,
       tags: ['CIBIL Score', 'Home Loan', 'Credit Tips', 'Finance']
@@ -87,7 +87,7 @@ const CMS = {
         <p>A Loan Against Property is a secured loan where you mortgage an existing property (residential, commercial, or industrial) to raise funds for any purpose.</p>
 
         <ul>
-          <li><strong>Purpose:</strong> Any purpose — business expansion, medical expenses, education, debt consolidation</li>
+          <li><strong>Purpose:</strong> Any purpose – business expansion, medical expenses, education, debt consolidation</li>
           <li><strong>LTV Ratio:</strong> Typically 50–70% of the property's market value</li>
           <li><strong>Interest Rates:</strong> Starting from 9.00% p.a. (slightly higher than home loans)</li>
           <li><strong>Tax Benefits:</strong> Only if used for business purposes</li>
@@ -104,7 +104,7 @@ const CMS = {
         <p>Choose LAP if you already own a property and need liquidity for business expansion, large medical bills, higher education, or any other significant expense. The interest rate is still much lower than personal loans or business loans.</p>
 
         <h2>Conclusion</h2>
-        <p>There is no universally "better" option — it depends entirely on your specific need. Our advisors at Angel Credit Services can help you evaluate both options based on your property value, income, and financial goals. Get in touch for a free consultation.</p>
+        <p>There is no universally "better" option – it depends entirely on your specific need. Our advisors at Angel Credit Services can help you evaluate both options based on your property value, income, and financial goals. Get in touch for a free consultation.</p>
       `,
       featured: false,
       tags: ['Home Loan', 'LAP', 'Loan Comparison', 'Finance Tips']

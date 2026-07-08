@@ -1,5 +1,5 @@
 /* =============================================
-   ANGEL CREDIT SERVICES — MAIN JS
+   ANGEL CREDIT SERVICES – MAIN JS
    Core: Nav scroll, mobile menu, form handlers,
          active link, lazy-load images
    ============================================= */
