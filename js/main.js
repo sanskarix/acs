@@ -69,6 +69,15 @@
 
       // Extract form data
       var formData = new FormData(contactForm);
+      
+      var phoneVal = formData.get('phone');
+      var emailVal = formData.get('email');
+      if ((!phoneVal || !phoneVal.trim()) && (!emailVal || !emailVal.trim())) {
+        alert('Please provide at least a phone number or an email address so we can reach you.');
+        submitBtn.textContent = 'Submit Inquiry';
+        submitBtn.disabled = false;
+        return;
+      }
       var payload = {
         firstName: formData.get('firstName'),
         lastName: formData.get('lastName'),
