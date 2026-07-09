@@ -123,6 +123,61 @@
     });
   }
 
+  /* ── POPUP FORM HANDLER ────────────────────────────── */
+  var popupForm = document.getElementById('popupForm');
+  if (popupForm) {
+    popupForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var submitBtn = popupForm.querySelector('button[type="submit"]');
+      if (!submitBtn) return;
+      var originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending\u2026';
+      submitBtn.disabled = true;
+
+      // Extract form data
+      var formData = new FormData(popupForm);
+      var nameVal = formData.get('name') || '';
+      var nameParts = nameVal.trim().split(' ');
+      var firstName = nameParts[0] || '';
+      var lastName = nameParts.slice(1).join(' ') || '';
+
+      var payload = {
+        firstName: firstName,
+        lastName: lastName,
+        phone: formData.get('phone'),
+        email: '',
+        loanType: 'Popup Quick Callback',
+        message: 'Quick Callback Request',
+        source: new URLSearchParams(window.location.search).get('loan') || 'organic'
+      };
+
+      var scriptURL = 'https://script.google.com/macros/s/AKfycby1fTQGNo6BgHuXaJLF4tSpW5Kp7PHxc3OG1YBp_pQUymhHyI5CcveyAXL_1XGdAmfhjA/exec';
+
+      fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(payload),
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8'
+        }
+      })
+        .then(function (response) {
+          popupForm.innerHTML =
+            '<div style="text-align:center;padding:var(--sp-8) 0;color:var(--primary-navy);">' +
+            '<div style="font-size:2rem;margin-bottom:10px;color:var(--accent-gold);">\u2713</div>' +
+            '<h3 style="font-family:var(--font-serif);font-weight:400;margin-bottom:8px;">Request Received</h3>' +
+            '<p style="font-size:var(--fs-sm);color:var(--text-secondary);margin:0 auto;">' +
+            'We will call you back shortly.' +
+            '</p></div>';
+        })
+        .catch(function (error) {
+          console.error('Error!', error.message);
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          alert('There was an error submitting the request. Please try again.');
+        });
+    });
+  }
+
   /* ── LAZY-LOAD IMAGES ────────────────────────────────── */
   if ('IntersectionObserver' in window) {
     var imgObserver = new IntersectionObserver(function (entries, observer) {
