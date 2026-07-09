@@ -82,8 +82,8 @@
       // TODO: Replace with your actual Google Apps Script Web App URL
       var scriptURL = 'https://script.google.com/macros/s/AKfycby1fTQGNo6BgHuXaJLF4tSpW5Kp7PHxc3OG1YBp_pQUymhHyI5CcveyAXL_1XGdAmfhjA/exec';
 
-      if (scriptURL === 'https://script.google.com/macros/s/AKfycby1fTQGNo6BgHuXaJLF4tSpW5Kp7PHxc3OG1YBp_pQUymhHyI5CcveyAXL_1XGdAmfhjA/exec') {
-        alert('Please update the https://script.google.com/macros/s/AKfycby1fTQGNo6BgHuXaJLF4tSpW5Kp7PHxc3OG1YBp_pQUymhHyI5CcveyAXL_1XGdAmfhjA/exec in js/main.js with your actual URL.');
+      if (scriptURL === 'YOUR_GOOGLE_SCRIPT_WEB_APP_URL') {
+        alert('Please update the YOUR_GOOGLE_SCRIPT_WEB_APP_URL in js/main.js with your actual URL.');
         submitBtn.textContent = 'Submit Inquiry';
         submitBtn.disabled = false;
         return;
