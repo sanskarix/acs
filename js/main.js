@@ -70,10 +70,26 @@
       // Extract form data
       var formData = new FormData(contactForm);
       
-      var phoneVal = formData.get('phone');
-      var emailVal = formData.get('email');
-      if ((!phoneVal || !phoneVal.trim()) && (!emailVal || !emailVal.trim())) {
+      var phoneVal = formData.get('phone') || '';
+      var emailVal = formData.get('email') || '';
+      if (!phoneVal.trim() && !emailVal.trim()) {
         alert('Please provide at least a phone number or an email address so we can reach you.');
+        submitBtn.textContent = 'Submit Inquiry';
+        submitBtn.disabled = false;
+        return;
+      }
+
+      var phoneStr = phoneVal.replace(/[- ]/g, '');
+      if (phoneStr && !/^(?:\+91|0)?\d{10}$/.test(phoneStr)) {
+        alert('Please enter a valid 10-digit phone number.');
+        submitBtn.textContent = 'Submit Inquiry';
+        submitBtn.disabled = false;
+        return;
+      }
+
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailVal.trim() && !emailRegex.test(emailVal.trim())) {
+        alert('Please enter a valid email address.');
         submitBtn.textContent = 'Submit Inquiry';
         submitBtn.disabled = false;
         return;
@@ -136,6 +152,15 @@
 
       // Extract form data
       var formData = new FormData(popupForm);
+      var phoneVal = formData.get('phone') || '';
+      var phoneStr = phoneVal.replace(/[- ]/g, '');
+      if (!phoneStr || !/^(?:\+91|0)?\d{10}$/.test(phoneStr)) {
+        alert('Please enter a valid 10-digit phone number.');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        return;
+      }
+
       var nameVal = formData.get('name') || '';
       var nameParts = nameVal.trim().split(' ');
       var firstName = nameParts[0] || '';
